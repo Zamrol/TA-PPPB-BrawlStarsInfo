@@ -1,0 +1,90 @@
+[debug] [2023-11-25T05:20:44.681Z] ----------------------------------------------------------------------
+[debug] [2023-11-25T05:20:44.687Z] Command:       E:\P\npm\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-11-25T05:20:44.688Z] CLI Version:   12.9.1
+[debug] [2023-11-25T05:20:44.689Z] Platform:      win32
+[debug] [2023-11-25T05:20:44.690Z] Node Version:  v18.18.2
+[debug] [2023-11-25T05:20:44.692Z] Time:          Sat Nov 25 2023 12:20:44 GMT+0700 (Western Indonesia Time)
+[debug] [2023-11-25T05:20:44.693Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-25T05:20:44.848Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-25T05:20:44.849Z] > authorizing via signed-in user (imadamada939@gmail.com)
+[debug] [2023-11-25T05:20:44.849Z] [iam] checking project tugasbesar-pppb-imada for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-25T05:20:44.854Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugasbesar-pppb-imada:testIamPermissions [none]
+[debug] [2023-11-25T05:20:44.855Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugasbesar-pppb-imada:testIamPermissions x-goog-quota-user=projects/tugasbesar-pppb-imada
+[debug] [2023-11-25T05:20:44.855Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugasbesar-pppb-imada:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-25T05:20:58.448Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugasbesar-pppb-imada:testIamPermissions 200
+[debug] [2023-11-25T05:20:58.449Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugasbesar-pppb-imada:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-25T05:20:58.451Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tugasbesar-pppb-imada [none]
+[debug] [2023-11-25T05:21:09.865Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tugasbesar-pppb-imada 200
+[debug] [2023-11-25T05:21:09.866Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tugasbesar-pppb-imada {"projectId":"tugasbesar-pppb-imada","projectNumber":"435373563914","displayName":"TugasBesar-PPPB-Imada","name":"projects/tugasbesar-pppb-imada","resources":{"hostingSite":"tugasbesar-pppb-imada"},"state":"ACTIVE","etag":"1_da88e705-bbb5-4a11-afb6-7cf86f62c3ee"}
+[info] 
+[info] === Deploying to 'tugasbesar-pppb-imada'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-11-25T05:21:09.883Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/versions [none]
+[debug] [2023-11-25T05:21:09.883Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-11-25T05:21:11.495Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/versions 200
+[debug] [2023-11-25T05:21:11.495Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/versions {"name":"projects/435373563914/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[tugasbesar-pppb-imada]: beginning deploy... 
+[info] i  hosting[tugasbesar-pppb-imada]: found 16 files in build 
+[debug] [2023-11-25T05:21:11.524Z] [hosting] uploading with 200 concurrency
+[debug] [2023-11-25T05:21:11.811Z] [hosting] hash cache [YnVpbGQ] stored for 16 files
+[debug] [2023-11-25T05:21:11.811Z] [hosting][hash queue][FINAL] {"max":267,"min":6,"avg":35.5625,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":281}
+[debug] [2023-11-25T05:21:11.812Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/435373563914/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b:populateFiles [none]
+[debug] [2023-11-25T05:21:11.813Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/435373563914/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/index.html":"d77746b07ca8ecc13fc48aeeb37a51cfc13fdd0a43939b4f99b23190030bbb40","/asset-manifest.json":"8df9b0f94da092434b6642e4dd3299e1de19166306cb0c5f9e4a7b18212fb7d4","/service-worker.js":"d0f1a9abf770da586206b74eba6a1d55f5cf37f77136f54a4ff913bbcba44513","/static/css/main.e7828696.css":"28d975e99ea8bc2977bebcef4565c225e4d7e8c6e8875bdca1aea0e3a69e04aa","/static/js/787.f46ecebb.chunk.js":"3e32ade68cc6b8d53d277299cd670041bb5b6d295e810190507c7a423b9f9229","/static/css/main.e7828696.css.map":"7760ef00cf59edc9bc23f7982a5e253cfca39ae81ad8a5e8bc9822816f659fcc","/static/js/787.f46ecebb.chunk.js.map":"bd7b74ff6993d8462c5c4b412f1c28e4a9a0def50c7e26085fc967f2a6ca776b","/static/js/main.f0032c77.js.LICENSE.txt":"788b52e01d2c4a18b39875f44cad2afdf85d82f4aa5c3ffb7356ce47f655c0b5","/service-worker.js.map":"7be7e4ea863844aa21e90346534eb1f0041acec994bd3f818eb0ff663b55fc31","/static/js/main.f0032c77.js":"735bf5cbcbb861c017f174e2f0beeb35e1fa9cbc730eb3b426cd253eae4b9eb6","/static/js/main.f0032c77.js.map":"5072dae84d40ffafbe01e8f6469c98113c78d9e0e1aa0277d84e7b448d82b749"}}
+[debug] [2023-11-25T05:21:13.182Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/435373563914/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b:populateFiles 200
+[debug] [2023-11-25T05:21:13.182Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/435373563914/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b:populateFiles {"uploadRequiredHashes":["7760ef00cf59edc9bc23f7982a5e253cfca39ae81ad8a5e8bc9822816f659fcc"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b/files"}
+[debug] [2023-11-25T05:21:13.183Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b/files/7760ef00cf59edc9bc23f7982a5e253cfca39ae81ad8a5e8bc9822816f659fcc [none]
+[debug] [2023-11-25T05:21:13.183Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b/files/7760ef00cf59edc9bc23f7982a5e253cfca39ae81ad8a5e8bc9822816f659fcc [stream]
+[debug] [2023-11-25T05:21:13.185Z] [hosting][populate queue][FINAL] {"max":1375,"min":1375,"avg":1375,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1377}
+[debug] [2023-11-25T05:21:13.186Z] [hosting] uploads queued: 1
+[debug] [2023-11-25T05:21:15.661Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b/files/7760ef00cf59edc9bc23f7982a5e253cfca39ae81ad8a5e8bc9822816f659fcc 200
+[debug] [2023-11-25T05:21:15.662Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b/files/7760ef00cf59edc9bc23f7982a5e253cfca39ae81ad8a5e8bc9822816f659fcc [stream]
+[debug] [2023-11-25T05:21:15.662Z] [hosting][upload queue][FINAL] {"max":2480,"min":2480,"avg":2480,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2480}
+[info] +  hosting[tugasbesar-pppb-imada]: file upload complete 
+[debug] [2023-11-25T05:21:15.664Z] [hosting] deploy completed after 4166ms
+[debug] [2023-11-25T05:21:15.665Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "tugasbesar-pppb-imada"
+    },
+    "version": "projects/435373563914/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b"
+  }
+]
+[info] i  hosting[tugasbesar-pppb-imada]: finalizing version... 
+[debug] [2023-11-25T05:21:15.669Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b updateMask=status%2Cconfig
+[debug] [2023-11-25T05:21:15.670Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2023-11-25T05:21:17.992Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b 200
+[debug] [2023-11-25T05:21:17.992Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b {"name":"projects/435373563914/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-11-25T05:21:09.704925Z","createUser":{"email":"imadamada939@gmail.com"},"finalizeTime":"2023-11-25T05:21:15.756396Z","finalizeUser":{"email":"imadamada939@gmail.com"}}
+[debug] [2023-11-25T05:21:17.992Z] [hosting] finalized version for tugasbesar-pppb-imada:[object Object]
+[info] +  hosting[tugasbesar-pppb-imada]: version finalized 
+[info] i  hosting[tugasbesar-pppb-imada]: releasing new version... 
+[debug] [2023-11-25T05:21:17.995Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/channels/live/releases versionName=projects%2F435373563914%2Fsites%2Ftugasbesar-pppb-imada%2Fversions%2F583f8eafce1ecb5b
+[debug] [2023-11-25T05:21:17.995Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/channels/live/releases {}
+[debug] [2023-11-25T05:21:20.084Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/channels/live/releases 200
+[debug] [2023-11-25T05:21:20.084Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tugasbesar-pppb-imada/channels/live/releases {"name":"projects/435373563914/sites/tugasbesar-pppb-imada/channels/live/releases/1700889677978000","version":{"name":"projects/435373563914/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-11-25T05:21:09.704925Z","createUser":{"email":"imadamada939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLF3OiwGiWqwYvE7MjknT2-qTJBNOdchEUyQGEQRycHZA=mo"},"finalizeTime":"2023-11-25T05:21:15.756396Z","finalizeUser":{"email":"imadamada939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLF3OiwGiWqwYvE7MjknT2-qTJBNOdchEUyQGEQRycHZA=mo"}},"type":"DEPLOY","releaseTime":"2023-11-25T05:21:17.978Z","releaseUser":{"email":"imadamada939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLF3OiwGiWqwYvE7MjknT2-qTJBNOdchEUyQGEQRycHZA=mo"}}
+[debug] [2023-11-25T05:21:20.084Z] [hosting] release: {"name":"projects/435373563914/sites/tugasbesar-pppb-imada/channels/live/releases/1700889677978000","version":{"name":"projects/435373563914/sites/tugasbesar-pppb-imada/versions/583f8eafce1ecb5b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-11-25T05:21:09.704925Z","createUser":{"email":"imadamada939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLF3OiwGiWqwYvE7MjknT2-qTJBNOdchEUyQGEQRycHZA=mo"},"finalizeTime":"2023-11-25T05:21:15.756396Z","finalizeUser":{"email":"imadamada939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLF3OiwGiWqwYvE7MjknT2-qTJBNOdchEUyQGEQRycHZA=mo"}},"type":"DEPLOY","releaseTime":"2023-11-25T05:21:17.978Z","releaseUser":{"email":"imadamada939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLF3OiwGiWqwYvE7MjknT2-qTJBNOdchEUyQGEQRycHZA=mo"}}
+[info] +  hosting[tugasbesar-pppb-imada]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/tugasbesar-pppb-imada/overview
+[info] Hosting URL: https://tugasbesar-pppb-imada.web.app
+[debug] [2023-11-25T05:21:30.397Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.

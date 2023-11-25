@@ -1,0 +1,189 @@
+.search-sort-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 95%;
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+.search-container {
+    flex-grow: 1;
+    margin-right: 20px; 
+}
+
+.sort-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar {
+    background-color: rgb(50, 58, 68);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    color: #fff;    
+}
+
+.sort-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+    background-color: #2980b9;
+}
+
+.sort-button.active {
+    background-color: #2c3e50;
+    color: #81c5f2;
+}
+
+
+/* BRAWLERS */
+
+.brawlers-container{
+    margin-bottom: 50px;
+}
+
+.brawlers-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.brawlers-list-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.brawlers-list a{
+    text-decoration: none;
+    color: rgb(88, 105, 119);
+}
+
+.brawlers-list-item:hover {
+    transform: scale(1.1); 
+}
+
+.brawler-image {
+    width: 100px;
+    height: 100px;
+}
+
+.brawler-title{
+    color: rgb(131,169,199);
+}
+
+/* MAPS */
+
+.maps-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding-bottom: 4%;
+}
+
+.maps-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.maps-list-item {
+    flex: 0 0 auto;
+    padding-bottom: 10px;
+    width: 180px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.maps-list-item a{
+    text-decoration: none;
+    color: #c0bcbc;
+}
+
+.maps-list-item p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+    
+.maps-list-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.maps-title {
+    color: aliceblue;
+}
+
+.maps-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+    
+
+/* GAMEMODE */
+
+.game-mode-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding-bottom: 4%;
+}
+  
+.game-mode-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+  
+.game-mode-list-item {
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.game-mode-list-item a {
+    text-decoration: none;
+    color: beige;
+}
+  
+.game-mode-list-item:hover {
+    transform: scale(1.1); 
+}
+  
+.game-mode-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}

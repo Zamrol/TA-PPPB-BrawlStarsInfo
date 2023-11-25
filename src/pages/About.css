@@ -1,0 +1,43 @@
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+  width: 300px;
+  margin: 20vh auto;
+  margin-top: 150px;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.description {
+  color: aliceblue;
+  text-align: center;
+}
+
+#nama {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+#nim, #kelompok {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+

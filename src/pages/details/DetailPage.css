@@ -1,0 +1,102 @@
+/* BRAWLER DETAIL */
+.brawler-detail {
+    margin-top: 150px;
+    color: wheat;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description {
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+.brawler-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.star-powers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.star-power {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.star-power-image {
+    max-width: 100px;
+    height: auto;
+    margin: 2px 0 10px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .brawler-detail {
+        width: 90%;
+    }
+
+    .star-power {
+        width: 100%; 
+    }
+}
+
+/* MAP DETAIL */
+
+.map-detail {
+  margin-top: 160px;
+  text-align: center;
+}
+
+.map-image {
+  max-width: 45%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.environment-container {
+  position: relative;
+  max-width: 42%;
+  margin: 0 auto;
+}
+
+.environment-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+}
+
+.map-name-over-environment {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 125%; 
+  text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+/* GAME MODE DETAIL */
+.game-mode-detail{
+    margin-top: 150px;
+}
+.game-mode-title{
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.game-mode-detail p{
+    color: aliceblue;
+    margin: 0 30px 0 30px;
+}
